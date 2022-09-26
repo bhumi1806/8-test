@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  color: #000;
+  font-weight: 300; }
+
+.container {
+  display: grid;
+  grid-template-columns: 20rem 5fr 3fr;
+  grid-template-rows: 1fr 7fr; }
+
+.heading-1 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: #3FA736; }
+
+.header {
+  background-color: green;
+  grid-column: 2 / span 2; }
+
+.listings {
+  background-color: yellow; }
+
+.sidebar {
+  background-color: #fff;
+  grid-row: 1 / span 2;
+  padding: 2rem; }
+  .sidebar__logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center; }
+    .sidebar__logo-btn {
+      border: none;
+      background-color: rgba(128, 128, 128, 0.1);
+      height: 3.4rem;
+      width: 3.4rem;
+      border-radius: 10px; }
+    .sidebar__logo-menu {
+      height: 2.2rem;
+      width: 2.2rem;
+      padding-top: 0.2rem;
+      color: #3FA736; }
+  .sidebar__main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 0; }
+    .sidebar__main-box {
+      display: flex;
+      gap: 1rem;
+      align-items: center; }
+    .sidebar__main-icon {
+      height: 1.8rem;
+      width: 1.8rem;
+      color: grey; }
+    .sidebar__main-link {
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      color: lightgrey; }
+  .sidebar__header {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-transform: uppercase; }
+  .sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0; }
+    .sidebar__nav-box {
+      display: flex;
+      gap: 1rem;
+      align-items: center; }
+    .sidebar__nav-icon {
+      height: 1.8rem;
+      width: 1.8rem;
+      color: grey; }
+    .sidebar__nav-link {
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      color: lightgrey; }
+  .sidebar__help {
+    box-sizing: border-box;
+    background-color: #449E3C; }
+    .sidebar__help-btn {
+      border: 3px solid #fff;
+      background-color: #449E3C;
+      border-radius: 50%; }
+    .sidebar__help-icon {
+      height: 2rem;
+      width: 2rem;
+      color: #000; }
+
+.status {
+  background-color: aqua; }

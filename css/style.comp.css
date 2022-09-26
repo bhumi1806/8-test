@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  color: #000;
+  font-weight: 300; }
+
+.container {
+  height: 100vh;
+  display: grid; }
+
+.header {
+  background-color: green; }
+
+.listings {
+  background-color: yellow; }
+
+.sidebar {
+  background-color: red; }
+
+.status {
+  background-color: aqua; }

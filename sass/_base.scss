@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body{
+    color: #000;
+    font-weight: 300;
+}
+
+.container{
+    // height: 100vh;
+    display: grid;
+    grid-template-columns: 20rem 5fr 3fr;
+    grid-template-rows: 1fr 7fr;
+}
