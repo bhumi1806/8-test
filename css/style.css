@@ -16,24 +16,132 @@ body {
 .container {
   display: grid;
   grid-template-columns: 20rem 5fr 3fr;
-  grid-template-rows: 1fr 7fr; }
+  grid-template-rows: 8rem 7fr; }
 
 .heading-1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  color: #000; }
+
+.heading-2 {
+  font-size: 2.2rem;
   font-family: sans-serif;
   color: #3FA736; }
 
 .header {
-  background-color: green;
-  grid-column: 2 / span 2; }
+  background-color: #fbfbfb;
+  grid-column: 2 / span 2;
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header__box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; }
+    .header__box-sold {
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      color: #7f7f7f; }
+  .header__container {
+    display: flex;
+    gap: 8rem; }
+  .header__form {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem; }
+    .header__form-btn {
+      border: none;
+      background-color: lightgrey; }
+      .header__form-btn:focus {
+        outline: none; }
+      .header__form-btn:active {
+        transform: translateY(2px); }
+    .header__form-icon, .header__form-opt {
+      height: 1.8rem;
+      width: 1.8rem;
+      color: grey; }
+    .header__form-input {
+      font-family: sans-serif;
+      font-size: 1.1rem;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      padding: 1.2rem 0.8rem 1.2rem 3.5rem;
+      border-radius: 10px;
+      width: 28rem;
+      transition: all .2s;
+      margin-left: -3rem;
+      margin-right: -3rem; }
+      .header__form-input::-webkit-input-placeholder {
+        font-weight: 100;
+        color: grey; }
+  .header__content {
+    display: flex;
+    gap: 1rem; }
+  .header__msg, .header__not {
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: #fff;
+    padding: 0.8rem;
+    border-radius: 10px; }
+  .header__not::before {
+    content: "";
+    background-color: #ff0000;
+    height: 0.6rem;
+    width: 0.6rem;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: 1rem;
+    margin-top: 0.2rem; }
+  .header__img {
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 10px;
+    margin-left: 0.6rem; }
 
 .listings {
-  background-color: yellow; }
+  background-color: #fbfbfb;
+  padding: 2rem 4rem; }
+  .listings__box {
+    background-image: url(../img/hiro.jpg.jpg), linear-gradient(to right bottom, rgba(13, 33, 11, 0.8), rgba(19, 50, 16, 0.8));
+    background-size: cover;
+    padding: 3rem 3rem;
+    border-radius: 8px;
+    margin-bottom: 5rem; }
+    .listings__box-sold {
+      font-size: 1.4rem;
+      font-family: sans-serif;
+      color: #2c7526;
+      margin: 1rem 18rem 1rem 0; }
+  .listings__btn {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0 1rem 0; }
+    .listings__btn-1 {
+      border: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1rem 1.8rem;
+      color: #3FA736;
+      font-size: 1.1rem;
+      font-family: sans-serif;
+      font-weight: 600; }
+    .listings__btn-2 {
+      border: 1px solid #fff;
+      padding: 1rem 1.8rem;
+      border-radius: 8px;
+      background-color: transparent;
+      color: #fff;
+      font-size: 1.1rem;
+      font-family: sans-serif;
+      font-weight: 600; }
 
 .sidebar {
   background-color: #fff;
   grid-row: 1 / span 2;
-  padding: 2rem; }
+  padding: 2rem;
+  border-right: 1px solid #a9a9a9; }
   .sidebar__logo {
     display: flex;
     gap: 1rem;
@@ -53,7 +161,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: 3rem 0; }
+    padding: 5rem 0 3rem 0; }
     .sidebar__main-box {
       display: flex;
       gap: 1rem;
@@ -61,12 +169,12 @@ body {
     .sidebar__main-icon {
       height: 1.8rem;
       width: 1.8rem;
-      color: grey; }
+      color: #545454; }
     .sidebar__main-link {
       text-decoration: none;
       font-size: 1.2rem;
       font-family: sans-serif;
-      color: lightgrey; }
+      color: #7f7f7f; }
   .sidebar__header {
     font-size: 1.2rem;
     font-family: sans-serif;
@@ -83,23 +191,56 @@ body {
     .sidebar__nav-icon {
       height: 1.8rem;
       width: 1.8rem;
-      color: grey; }
+      color: #545454; }
     .sidebar__nav-link {
       text-decoration: none;
       font-size: 1.2rem;
       font-family: sans-serif;
-      color: lightgrey; }
+      color: #7f7f7f; }
   .sidebar__help {
     box-sizing: border-box;
-    background-color: #449E3C; }
+    background-color: #69b163;
+    border-radius: 6px;
+    box-shadow: 0.4rem 1rem 2.5rem -1.4rem rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.4rem 0; }
     .sidebar__help-btn {
-      border: 3px solid #fff;
-      background-color: #449E3C;
-      border-radius: 50%; }
+      border: 11px solid #fff;
+      background-color: #69b163;
+      box-shadow: 0 1.5rem 1.1rem rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      height: 4rem;
+      width: 4rem;
+      margin-top: -1.5rem; }
     .sidebar__help-icon {
-      height: 2rem;
-      width: 2rem;
-      color: #000; }
+      height: 1.4rem;
+      width: 1.4rem;
+      color: #000;
+      padding-top: 0.2rem; }
+    .sidebar__help-header {
+      font-size: 1.4rem;
+      font-family: sans-serif;
+      color: #0e200c;
+      margin-top: 2.8rem; }
+    .sidebar__help-sold {
+      font-size: 1rem;
+      font-family: sans-serif;
+      color: grey;
+      text-align: center;
+      padding: 0 1.6rem; }
+    .sidebar__help-button {
+      border: none;
+      background-color: #fff;
+      border-radius: 7px;
+      font-size: 1rem;
+      font-family: sans-serif;
+      font-weight: 600;
+      color: #000;
+      padding: 1rem 2rem;
+      margin: 1.2rem 0 1.8rem 0; }
 
 .status {
   background-color: aqua; }
