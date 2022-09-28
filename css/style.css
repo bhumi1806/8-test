@@ -83,6 +83,7 @@ body {
     height: 1.8rem;
     width: 1.8rem;
     background-color: #fff;
+    box-shadow: 0 1.5rem 1.1rem rgba(0, 0, 0, 0.2);
     padding: 0.8rem;
     border-radius: 10px; }
   .header__not::before {
@@ -98,6 +99,7 @@ body {
     height: 3.2rem;
     width: 3.2rem;
     border-radius: 10px;
+    box-shadow: 0 1.5rem 1.1rem rgba(0, 0, 0, 0.2);
     margin-left: 0.6rem; }
 
 .listings {
@@ -106,9 +108,10 @@ body {
   .listings__box {
     background-image: url(../img/hiro.jpg.jpg), linear-gradient(to right bottom, rgba(13, 33, 11, 0.8), rgba(19, 50, 16, 0.8));
     background-size: cover;
+    box-shadow: 0.8rem 1.5rem 3.1rem rgba(0, 0, 0, 0.2);
     padding: 3rem 3rem;
     border-radius: 8px;
-    margin-bottom: 5rem; }
+    margin-bottom: 6rem; }
     .listings__box-sold {
       font-size: 1.4rem;
       font-family: sans-serif;
@@ -136,6 +139,16 @@ body {
       font-size: 1.1rem;
       font-family: sans-serif;
       font-weight: 600; }
+  .listings__view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .listings__view-link {
+      text-decoration: none;
+      font-size: 1rem;
+      font-family: sans-serif;
+      font-weight: 600;
+      color: #999999; }
 
 .sidebar {
   background-color: #fff;
