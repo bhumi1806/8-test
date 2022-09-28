@@ -28,6 +28,11 @@ body {
   font-family: sans-serif;
   color: #3FA736; }
 
+.heading-3 {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  color: #3FA736; }
+
 .header {
   background-color: #fbfbfb;
   grid-column: 2 / span 2;
@@ -111,7 +116,7 @@ body {
     box-shadow: 0.8rem 1.5rem 3.1rem rgba(0, 0, 0, 0.2);
     padding: 3rem 3rem;
     border-radius: 8px;
-    margin-bottom: 6rem; }
+    margin-bottom: 5.6rem; }
     .listings__box-sold {
       font-size: 1.4rem;
       font-family: sans-serif;
@@ -142,13 +147,114 @@ body {
   .listings__view {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 3rem; }
     .listings__view-link {
       text-decoration: none;
       font-size: 1rem;
       font-family: sans-serif;
       font-weight: 600;
       color: #999999; }
+
+.plant {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem; }
+  .plant__box {
+    background-color: #fff;
+    padding: 2rem 2rem 1.5rem 2rem;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center; }
+    .plant__box:hover, .plant__box:active {
+      box-shadow: 0.8rem 1.5rem 3.1rem rgba(0, 0, 0, 0.2); }
+    .plant__box-img {
+      height: 15rem;
+      width: 14rem;
+      margin-bottom: 1rem; }
+    .plant__box-img1 {
+      height: 15rem;
+      width: 14rem;
+      margin-bottom: 1rem;
+      margin-top: 0.6rem; }
+    .plant__box-text {
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      color: #000; }
+    .plant__box-text1 {
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      color: #000; }
+    .plant__box-btn {
+      border: none;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 1.1rem rgba(0, 0, 0, 0.2);
+      padding: 0.6rem;
+      margin-left: 11rem;
+      border-radius: 5px; }
+    .plant__box-icon {
+      height: 1.4rem;
+      width: 1.4rem;
+      padding-top: 0.2rem; }
+  .plant__box1 {
+    background-color: #fff;
+    padding: 0.4rem 2rem 1.5rem 2rem;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center; }
+    .plant__box1:hover, .plant__box1:active {
+      box-shadow: 0.8rem 1.5rem 3.1rem rgba(0, 0, 0, 0.2); }
+
+.seller {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 3rem;
+  margin-top: 5rem; }
+  .seller__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; }
+    .seller__box-view {
+      display: flex;
+      justify-content: space-between; }
+  .seller__sell {
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem; }
+    .seller__sell-box {
+      display: flex; }
+    .seller__sell-img {
+      height: 2.8rem;
+      width: 2.8rem;
+      border-radius: 50%;
+      margin-left: -5px;
+      border: 2px solid #fff; }
+    .seller__sell-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      border-left: 2px solid aquamarine; }
+    .seller__sell-sold {
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      font-weight: 600;
+      margin-left: 1rem; }
+  .seller__text {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem; }
+    .seller__text-sold, .seller__text-sold-1 {
+      font-size: 1.2rem;
+      font-family: sans-serif; }
 
 .sidebar {
   background-color: #fff;
@@ -219,7 +325,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin: 1.4rem 0; }
+    margin: 2rem  0 1.4rem 0; }
     .sidebar__help-btn {
       border: 11px solid #fff;
       background-color: #69b163;
