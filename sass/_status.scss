@@ -1,3 +1,110 @@
 .status{
-    background-color: aqua;
+    background-color: #fbfbfb;
+    padding: 2rem 4rem 0 0;
+
+    &__box{
+        background-image: url(../img/back.jpg);
+        background-size: cover;
+        box-shadow: 0.8rem 1.5rem 3.1rem rgba(#000, .2);
+        border-radius: 8px;
+        padding: 2rem 0 2rem 2rem ;
+        margin-bottom: 5.6rem;
+
+        &-info{
+            display: flex;
+            flex-direction: column;
+            gap: 6.5rem;
+        }
+
+        &-text{
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+        }
+
+        &-time{
+           display: flex; 
+           gap: 1rem;
+        }
+
+        &-day{
+            display: flex;
+            flex-direction: column;
+
+            &-header{
+                font-size: 1rem;
+                font-family: sans-serif;
+                color: #000;
+            }
+
+            &-sold{
+                font-size: 1.3rem;
+                font-weight: 600;
+                font-family: sans-serif;
+                color: #000;
+            }
+        }
+
+        &-link{
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #000;
+            font-weight: 600;
+        }
+    }
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    &__box{
+        display: grid;
+        grid-template-columns: 4rem 5fr;
+        gap: 0.6rem;
+        align-items: center;
+    }
+
+    &__img{
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+
+        &-box{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-text{
+            font-size: 1.3rem;
+            font-family: sans-serif;
+            color: #4d4d4d;
+        }
+
+        &-time{
+            font-size: 1rem;
+            font-family: sans-serif;
+            color: #737373;
+        }
+
+        &-sold{
+            font-size: 1rem;
+            font-family: sans-serif;
+            color: #737373;
+        }
+    }
 }

@@ -75,7 +75,7 @@
         // box-sizing: border-box;
         background-color: #fff;
         padding: 2rem 2rem 1.5rem 2rem;
-        border-radius: 10px;
+        border-radius: 8px;
         border: 1px solid lightgrey;
         display: flex;
         flex-direction: column;
@@ -168,11 +168,12 @@
     &__sell{
         background-color: #fff;
         border: 1px solid lightgrey;
-        border-radius: 10px;
+        border-radius: 8px;
         display: flex;
         gap: 2rem;
         // justify-content: space-between;
         padding: 2rem;
+        box-shadow: 0.8rem 1.5rem 3.1rem rgba(#000, .2);
 
         &-box{
             display: flex;
@@ -198,6 +199,7 @@
             font-family: sans-serif;
             font-weight: 600;
             margin-left: 1rem;
+            color: #4d4d4d;
         }
     }
 
@@ -210,6 +212,7 @@
         &-sold-1{
             font-size: 1.2rem;
             font-family: sans-serif;
+            color: #737373;
         }
     }
 }
