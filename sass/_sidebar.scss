@@ -4,6 +4,20 @@
     padding: 2rem;
     border-right: 1px solid #a9a9a9;
 
+    @media only screen and (max-width: $bp-large){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        grid-row: 1 / span 3;
+        // height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
     &__logo{
         display: flex;
         gap: 1rem;
@@ -26,17 +40,76 @@
         }
     }
 
+    &__heading{
+        font-size: 2.2rem;
+        font-family: sans-serif;
+        color: #3FA736;
+
+        @media only screen and (max-width: $bp-large){
+            display: none;
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            display: flex;
+        }
+    }
+
+    &__navigation{
+        display: flex;
+        flex-direction: column;
+
+        // @media only screen and (max-width: $bp-large){
+        //     display: flex;
+        //     flex-direction: row;
+        //     align-items: center;
+        //     gap: 3rem;
+        //     margin-bottom: 2rem;
+        // }
+
+        @media only screen and (max-width: $bp-medium){
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 0;
+        }
+    }
+
     &__main{
         display: flex;
         flex-direction: column;
         gap: 3rem;
         padding: 5rem 0 3rem 0;
 
-        &-box{
+        // @media only screen and (max-width: $bp-large){
+        //     display: flex;
+        //     flex-direction: row;
+        //     gap: 4rem;
+        //     padding: 3rem 0;
+        // }
+
+        @media only screen and (max-width: $bp-medium){
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            padding: 5rem 0 3rem 0;
+        }
+
+        &-item{
             display: flex;
             gap: 1rem;
             align-items: center;
+            list-style: none;
             position: relative;
+
+            // @media only screen and (max-width: $bp-large){
+            //     display: flex;
+            //     flex-direction: column;
+            // }
+
+            @media only screen and (max-width: $bp-medium){
+                display: flex;
+                flex-direction: row;
+            }
 
             &::before{
                 content: "";
@@ -64,6 +137,11 @@
             width: 1.8rem;
             color: #545454;
             z-index: 10;
+
+            // @media only screen and (max-width: $bp-large){
+            //     height: 2.5rem;
+            //     width: 2.5rem;
+            // }
         }
 
         &-link{
@@ -72,6 +150,14 @@
             font-family: sans-serif;
             color: #7f7f7f;
             z-index: 10;
+
+            @media only screen and (max-width: $bp-large){
+                display: none;
+            }
+
+            @media only screen and (max-width: $bp-medium){
+                display: flex;
+            }
         }
     }
 
@@ -79,6 +165,15 @@
         font-size: 1.2rem;
         font-family: sans-serif;
         text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-large){
+            display: none;
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            font-size: 1.2rem;
+            display: inline;
+        }
     }
 
     &__nav{
@@ -87,7 +182,19 @@
         gap: 2rem;
         padding: 3rem 0;
 
-        &-box{
+        // @media only screen and (max-width: $bp-large){
+        //     display: flex;
+        //     flex-direction: row;
+        //     gap: 4rem;
+        // }
+
+        @media only screen and (max-width: $bp-medium){
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        &-item{
             display: flex;
             gap: 1rem;
             align-items: center;
@@ -118,6 +225,11 @@
             height: 1.8rem;
             width: 1.8rem;
             color: #545454;
+
+            // @media only screen and (max-width: $bp-large){
+            //     height: 2.5rem;
+            //     width: 2.5rem;
+            // }
         }
 
         &-link{
@@ -125,6 +237,14 @@
             font-size: 1.2rem;
             font-family: sans-serif;
             color: #7f7f7f;
+
+            @media only screen and (max-width: $bp-large){
+                display: none;
+            }
+
+            @media only screen and (max-width: $bp-medium){
+                display: flex;
+            }
         }
     }
 
@@ -139,6 +259,14 @@
         gap: 1rem;
         margin: 2rem  0 1.4rem 0; 
 
+        @media only screen and (max-width: $bp-large){
+            display: none;
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            display: flex;
+        }
+
         &-btn{
             border: 11px solid #fff;
             background-color: #69b163;
@@ -147,6 +275,12 @@
             height: 4rem;
             width: 4rem;
             margin-top: -1.5rem;
+
+            @media only screen and (max-width: $bp-medium){
+                border: 7px solid #fff;
+                height: 3.5rem;
+                width: 3.5rem;
+            }
         }
 
         &-icon{
