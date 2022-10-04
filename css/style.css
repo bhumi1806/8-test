@@ -164,8 +164,9 @@ body {
     .listings {
       grid-column: 2 / span 1; } }
   .listings__box {
-    background-image: url(../img/hiro.jpg.jpg), linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(19, 50, 16, 0.8));
+    background-image: url(../img/hiro.jpg.jpg);
     background-size: cover;
+    opacity: 0.9;
     box-shadow: 0.8rem 1.5rem 3.1rem rgba(0, 0, 0, 0.2);
     padding: 3rem 3rem;
     border-radius: 8px;
@@ -177,7 +178,7 @@ body {
     .listings__box-sold {
       font-size: 1.4rem;
       font-family: sans-serif;
-      color: #2c7526; }
+      color: #41833c; }
   .listings__btn {
     display: flex;
     gap: 1rem;
