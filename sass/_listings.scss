@@ -14,7 +14,10 @@
         padding: 3rem 3rem;
         border-radius: 8px;
         margin-bottom: 5.6rem;
-        height: 27.5%;
+        height: 24.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         @media only screen  and (max-width: $bp-smallest){
             height: auto;
@@ -30,7 +33,7 @@
     &__btn{
         display: flex;
         gap: 1rem;
-        margin: 2rem 0 1rem 0;
+        margin: 2rem 0 0 0;
 
         &-1{
             border: none;
