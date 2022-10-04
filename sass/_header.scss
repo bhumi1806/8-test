@@ -7,16 +7,18 @@
     align-items: center;
     justify-content: space-between;
 
-    // @media only screen and (max-width: $bp-large){
-    //     grid-column: 1 / span 2;
-    // }
-
     @media only screen and (max-width: $bp-medium){
         grid-column: 2 / span 2;
         padding: 2rem 4rem;
         display: flex;
         flex-direction: column;
         align-items: start;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     &__box{
@@ -34,11 +36,6 @@
     &__container{
         display: flex;
         gap: 8rem;
-
-        // @media only screen and (max-width: $bp-medium){
-        //     display: flex;
-        //     justify-content: space-between;
-        // }
     }
 
     &__form{

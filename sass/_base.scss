@@ -39,7 +39,12 @@ body{
     }
 
     @media only screen and (max-width: $bp-medium){
-        grid-template-columns: 22rem 5fr;
+        grid-template-columns: 6rem 5fr;
         grid-template-rows: 14rem 7fr 6fr;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        display: flex;
+        flex-direction: column;
     }
 }

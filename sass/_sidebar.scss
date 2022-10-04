@@ -12,10 +12,15 @@
 
     @media only screen and (max-width: $bp-medium){
         grid-row: 1 / span 3;
-        // height: 100vh;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
     }
 
     &__logo{
@@ -28,7 +33,6 @@
             background-color: rgba(grey, .1);
             height: 3.4rem;
             width: 3.4rem;
-            // padding: 0.6rem;
             border-radius: 10px;
         }
 
@@ -48,29 +52,23 @@
         @media only screen and (max-width: $bp-large){
             display: none;
         }
-
-        @media only screen and (max-width: $bp-medium){
-            display: flex;
-        }
     }
 
     &__navigation{
         display: flex;
         flex-direction: column;
 
-        // @media only screen and (max-width: $bp-large){
-        //     display: flex;
-        //     flex-direction: row;
-        //     align-items: center;
-        //     gap: 3rem;
-        //     margin-bottom: 2rem;
-        // }
-
         @media only screen and (max-width: $bp-medium){
             display: flex;
             flex-direction: column;
             align-items: start;
             gap: 0;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
         }
     }
 
@@ -80,18 +78,10 @@
         gap: 3rem;
         padding: 5rem 0 3rem 0;
 
-        // @media only screen and (max-width: $bp-large){
-        //     display: flex;
-        //     flex-direction: row;
-        //     gap: 4rem;
-        //     padding: 3rem 0;
-        // }
-
-        @media only screen and (max-width: $bp-medium){
+        @media only screen and (max-width: $bp-small){
             display: flex;
-            flex-direction: column;
-            gap: 3rem;
-            padding: 5rem 0 3rem 0;
+            flex-direction: row;
+            padding: 0;
         }
 
         &-item{
@@ -100,16 +90,6 @@
             align-items: center;
             list-style: none;
             position: relative;
-
-            // @media only screen and (max-width: $bp-large){
-            //     display: flex;
-            //     flex-direction: column;
-            // }
-
-            @media only screen and (max-width: $bp-medium){
-                display: flex;
-                flex-direction: row;
-            }
 
             &::before{
                 content: "";
@@ -137,11 +117,6 @@
             width: 1.8rem;
             color: #545454;
             z-index: 10;
-
-            // @media only screen and (max-width: $bp-large){
-            //     height: 2.5rem;
-            //     width: 2.5rem;
-            // }
         }
 
         &-link{
@@ -153,10 +128,6 @@
 
             @media only screen and (max-width: $bp-large){
                 display: none;
-            }
-
-            @media only screen and (max-width: $bp-medium){
-                display: flex;
             }
         }
     }
@@ -169,11 +140,6 @@
         @media only screen and (max-width: $bp-large){
             display: none;
         }
-
-        @media only screen and (max-width: $bp-medium){
-            font-size: 1.2rem;
-            display: inline;
-        }
     }
 
     &__nav{
@@ -182,16 +148,11 @@
         gap: 2rem;
         padding: 3rem 0;
 
-        // @media only screen and (max-width: $bp-large){
-        //     display: flex;
-        //     flex-direction: row;
-        //     gap: 4rem;
-        // }
-
-        @media only screen and (max-width: $bp-medium){
+        @media only screen and (max-width: $bp-small){
             display: flex;
-            flex-direction: column;
-            gap: 2rem;
+            flex-direction: row;
+            padding: 0;
+            gap: 3rem;
         }
 
         &-item{
@@ -225,11 +186,6 @@
             height: 1.8rem;
             width: 1.8rem;
             color: #545454;
-
-            // @media only screen and (max-width: $bp-large){
-            //     height: 2.5rem;
-            //     width: 2.5rem;
-            // }
         }
 
         &-link{
@@ -240,10 +196,6 @@
 
             @media only screen and (max-width: $bp-large){
                 display: none;
-            }
-
-            @media only screen and (max-width: $bp-medium){
-                display: flex;
             }
         }
     }
@@ -263,10 +215,6 @@
             display: none;
         }
 
-        @media only screen and (max-width: $bp-medium){
-            display: flex;
-        }
-
         &-btn{
             border: 11px solid #fff;
             background-color: #69b163;
@@ -275,12 +223,6 @@
             height: 4rem;
             width: 4rem;
             margin-top: -1.5rem;
-
-            @media only screen and (max-width: $bp-medium){
-                border: 7px solid #fff;
-                height: 3.5rem;
-                width: 3.5rem;
-            }
         }
 
         &-icon{
