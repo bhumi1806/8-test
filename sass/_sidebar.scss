@@ -23,6 +23,11 @@
         gap: 2rem;
     }
 
+    @media only screen  and (max-width: $bp-smallest){
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__logo{
         display: flex;
         gap: 1rem;
@@ -153,6 +158,10 @@
             flex-direction: row;
             padding: 0;
             gap: 3rem;
+        }
+
+        @media only screen  and (max-width: $bp-smallest){
+            display: none;
         }
 
         &-item{

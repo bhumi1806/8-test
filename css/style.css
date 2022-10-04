@@ -79,6 +79,16 @@ body {
   .header__container {
     display: flex;
     gap: 8rem; }
+    @media only screen and (max-width: 50em) {
+      .header__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; } }
+    @media only screen and (max-width: 31em) {
+      .header__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; } }
   .header__form {
     display: flex;
     align-items: center;
@@ -115,9 +125,15 @@ body {
       @media only screen and (max-width: 50em) {
         .header__form-input {
           width: 35rem; } }
+      @media only screen and (max-width: 31em) {
+        .header__form-input {
+          width: 100%; } }
   .header__content {
     display: flex;
     gap: 1rem; }
+    @media only screen and (max-width: 31em) {
+      .header__content {
+        justify-content: end; } }
   .header__msg, .header__not {
     height: 1.8rem;
     width: 1.8rem;
@@ -148,23 +164,20 @@ body {
     .listings {
       grid-column: 2 / span 1; } }
   .listings__box {
-    background-image: url(../img/hiro.jpg.jpg), linear-gradient(to right bottom, rgba(13, 33, 11, 0.8), rgba(19, 50, 16, 0.8));
-    background-size: contain;
+    background-image: url(../img/hiro.jpg.jpg), linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(19, 50, 16, 0.8));
+    background-size: cover;
     box-shadow: 0.8rem 1.5rem 3.1rem rgba(0, 0, 0, 0.2);
     padding: 3rem 3rem;
     border-radius: 8px;
-    margin-bottom: 5.6rem; }
+    margin-bottom: 5.6rem;
+    height: 27.5%; }
+    @media only screen and (max-width: 31em) {
+      .listings__box {
+        height: auto; } }
     .listings__box-sold {
       font-size: 1.4rem;
       font-family: sans-serif;
-      color: #2c7526;
-      margin: 1rem 25rem 1rem 0; }
-      @media only screen and (max-width: 78em) {
-        .listings__box-sold {
-          margin: 1rem 32rem 1rem 0; } }
-      @media only screen and (max-width: 62.5em) {
-        .listings__box-sold {
-          margin: 1rem 30rem 1rem 0; } }
+      color: #2c7526; }
   .listings__btn {
     display: flex;
     gap: 1rem;
@@ -203,6 +216,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem; }
+  @media only screen and (max-width: 31em) {
+    .plant {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .plant__box {
     background-color: #fff;
     padding: 2rem 2rem 1.5rem 2rem;
@@ -212,6 +230,9 @@ body {
     flex-direction: column;
     justify-content: end;
     align-items: center; }
+    @media only screen and (max-width: 31em) {
+      .plant__box {
+        width: fit-content; } }
     .plant__box:hover, .plant__box:active {
       box-shadow: 0.8rem 1.5rem 3.1rem rgba(0, 0, 0, 0.2); }
     .plant__box-img {
@@ -235,8 +256,8 @@ body {
       border: none;
       background-color: #fff;
       box-shadow: 0 1.5rem 1.1rem rgba(0, 0, 0, 0.2);
-      padding: 0.6rem;
-      margin-left: 11rem;
+      padding: 0.4rem;
+      margin-right: -14rem;
       border-radius: 5px; }
     .plant__box-icon {
       height: 1.4rem;
@@ -251,6 +272,9 @@ body {
     justify-content: end;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (max-width: 31em) {
+      .plant__box1 {
+        width: fit-content; } }
     .plant__box1:hover, .plant__box1:active {
       box-shadow: 0.8rem 1.5rem 3.1rem rgba(0, 0, 0, 0.2); }
 
@@ -258,7 +282,12 @@ body {
   display: grid;
   grid-template-columns: 2fr 2fr;
   gap: 3rem;
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  margin-bottom: 3rem; }
+  @media only screen and (max-width: 31em) {
+    .seller {
+      display: flex;
+      flex-direction: column; } }
   .seller__box {
     display: flex;
     flex-direction: column;
@@ -323,6 +352,10 @@ body {
       display: flex;
       flex-direction: row;
       gap: 2rem; } }
+  @media only screen and (max-width: 31em) {
+    .sidebar {
+      display: flex;
+      justify-content: space-between; } }
   .sidebar__logo {
     display: flex;
     gap: 1rem;
@@ -420,6 +453,9 @@ body {
         flex-direction: row;
         padding: 0;
         gap: 3rem; } }
+    @media only screen and (max-width: 31em) {
+      .sidebar__nav {
+        display: none; } }
     .sidebar__nav-item {
       display: flex;
       gap: 1rem;
@@ -511,7 +547,8 @@ body {
     box-shadow: 0.8rem 1.5rem 3.1rem rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     padding: 2rem 0 2rem 2rem;
-    margin-bottom: 5.6rem; }
+    margin-bottom: 5.6rem;
+    height: 26.5%; }
     .status__box-info {
       display: flex;
       flex-direction: column;
