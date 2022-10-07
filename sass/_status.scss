@@ -14,19 +14,13 @@
         border-radius: 8px;
         padding: 3rem 0 2rem 3rem ;
         margin-bottom: 5.6rem;
-        height: 23%;
-
-        @media only screen and (max-width: $bp-large){
-            height: 19%;
-        }
+        height: 20rem;
 
         @media only screen and (max-width: $bp-medium){
-            height: 28%;
             margin-bottom: 3.6rem;
         }
 
         @media only screen  and (max-width: $bp-smallest){
-            height: 24%;
             margin-bottom: 3.6rem;
         }
 

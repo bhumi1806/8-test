@@ -171,19 +171,10 @@ body {
     padding: 3rem 3rem;
     border-radius: 8px;
     margin-bottom: 5.6rem;
-    height: 23.5%;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    @media only screen and (max-width: 62.5em) {
-      .listings__box {
-        height: 19.5%; } }
-    @media only screen and (max-width: 50em) {
-      .listings__box {
-        height: 28%; } }
-    @media only screen and (max-width: 31em) {
-      .listings__box {
-        height: 15%; } }
     .listings__box-text {
       display: flex;
       flex-direction: column;
@@ -327,6 +318,7 @@ body {
     display: flex;
     gap: 2rem;
     padding: 2rem;
+    align-items: center;
     box-shadow: 0.8rem 1.5rem 3.1rem rgba(0, 0, 0, 0.2); }
     .seller__sell-box {
       display: flex; }
@@ -577,17 +569,12 @@ body {
     border-radius: 8px;
     padding: 3rem 0 2rem 3rem;
     margin-bottom: 5.6rem;
-    height: 23%; }
-    @media only screen and (max-width: 62.5em) {
-      .status__box {
-        height: 19%; } }
+    height: 20rem; }
     @media only screen and (max-width: 50em) {
       .status__box {
-        height: 28%;
         margin-bottom: 3.6rem; } }
     @media only screen and (max-width: 31em) {
       .status__box {
-        height: 24%;
         margin-bottom: 3.6rem; } }
     .status__box-info {
       display: flex;

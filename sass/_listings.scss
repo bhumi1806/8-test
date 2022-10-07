@@ -14,22 +14,10 @@
         padding: 3rem 3rem;
         border-radius: 8px;
         margin-bottom: 5.6rem;
-        height: 23.5%;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-        @media only screen and (max-width: $bp-large){
-            height: 19.5%;
-        }
-
-        @media only screen and (max-width: $bp-medium){
-            height: 28%;
-        }
-
-        @media only screen  and (max-width: $bp-smallest){
-            height: 15%;
-        }
 
         &-text{
             display: flex;
@@ -223,6 +211,7 @@
         display: flex;
         gap: 2rem;
         padding: 2rem;
+        align-items: center;
         box-shadow: 0.8rem 1.5rem 3.1rem rgba(#000, .2);
 
         &-box{
