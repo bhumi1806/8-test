@@ -14,7 +14,7 @@
         padding: 3rem 3rem;
         border-radius: 8px;
         margin-bottom: 5.6rem;
-        height: 24.5%;
+        height: 26.5%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -108,6 +108,11 @@
             height: 15rem;
             width: 14rem;
             margin-bottom: 1rem;
+
+            @media only screen  and (max-width: $bp-smallest){
+                height: 17rem;
+                width: 16rem;
+            }
         }
 
         &-img1{
@@ -115,6 +120,11 @@
             width: 14rem;
             margin-bottom: 1rem;
             margin-top: 0.6rem;
+
+            @media only screen  and (max-width: $bp-smallest){
+                height: 17rem;
+                width: 16rem;
+            }
         }
 
         &-text{
@@ -134,8 +144,10 @@
             background-color: #fff;
             box-shadow: 0 1.5rem 1.1rem rgba(#000, .2);
             padding: 0.4rem;
-            margin-right: -14rem;
+            margin-right: -1rem;
             border-radius: 5px;
+            margin-left: auto;
+            display: flex;
         }
 
         &-icon{

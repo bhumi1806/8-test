@@ -171,7 +171,7 @@ body {
     padding: 3rem 3rem;
     border-radius: 8px;
     margin-bottom: 5.6rem;
-    height: 24.5%;
+    height: 26.5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -243,11 +243,19 @@ body {
       height: 15rem;
       width: 14rem;
       margin-bottom: 1rem; }
+      @media only screen and (max-width: 31em) {
+        .plant__box-img {
+          height: 17rem;
+          width: 16rem; } }
     .plant__box-img1 {
       height: 15rem;
       width: 14rem;
       margin-bottom: 1rem;
       margin-top: 0.6rem; }
+      @media only screen and (max-width: 31em) {
+        .plant__box-img1 {
+          height: 17rem;
+          width: 16rem; } }
     .plant__box-text {
       font-size: 1.2rem;
       font-family: sans-serif;
@@ -261,8 +269,10 @@ body {
       background-color: #fff;
       box-shadow: 0 1.5rem 1.1rem rgba(0, 0, 0, 0.2);
       padding: 0.4rem;
-      margin-right: -14rem;
-      border-radius: 5px; }
+      margin-right: -1rem;
+      border-radius: 5px;
+      margin-left: auto;
+      display: flex; }
     .plant__box-icon {
       height: 1.4rem;
       width: 1.4rem;
@@ -355,7 +365,8 @@ body {
     .sidebar {
       display: flex;
       flex-direction: row;
-      gap: 2rem; } }
+      gap: 2rem;
+      border-bottom: 1px solid #a9a9a9; } }
   @media only screen and (max-width: 31em) {
     .sidebar {
       display: flex;
@@ -511,6 +522,9 @@ body {
       height: 4rem;
       width: 4rem;
       margin-top: -1.5rem; }
+      @media only screen and (max-width: 78em) {
+        .sidebar__help-btn {
+          border: 8px solid #fff; } }
     .sidebar__help-icon {
       height: 1.4rem;
       width: 1.4rem;
@@ -552,11 +566,11 @@ body {
     border-radius: 8px;
     padding: 2rem 0 2rem 2rem;
     margin-bottom: 5.6rem;
-    height: 24%; }
+    height: 26%; }
     .status__box-info {
       display: flex;
       flex-direction: column;
-      gap: 4.5rem; }
+      gap: 5.5rem; }
     .status__box-text {
       display: flex;
       flex-direction: column;
